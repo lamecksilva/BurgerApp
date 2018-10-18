@@ -14,10 +14,18 @@ class App extends Component {
   };
 
   render() {
+    const style = {
+      backgroundColor: "white",
+      font: "inherit",
+      border: "1px solid blue",
+      padding: "8px"
+    };
+
     return (
       <div className="App">
         <Person changed={this.nameChangedHandler}>Testing React</Person>
         <p>{this.state.name}</p>
+        <button style={style}>Click Me</button>
       </div>
     );
   }
