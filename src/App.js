@@ -4,7 +4,7 @@ import Person from "./components/Person";
 
 class App extends Component {
   state = {
-    name: "jorge"
+    name: ""
   };
 
   nameChangedHandler = event => {
